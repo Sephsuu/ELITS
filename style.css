@@ -446,3 +446,33 @@
     text-align: justify;
 }
 
+.join-section{
+    height: 100vh;
+    background-color: var(--tertiary);  
+    font-size: 4px;
+}
+
+.join-section h1{
+    height: 100vh;
+    font-size: 40px;
+}
+
+.join-section #vid-bg{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.join-section #vid-content{
+    position: relative;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
