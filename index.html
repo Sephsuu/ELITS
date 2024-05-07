@@ -15,7 +15,7 @@
 <body>
 
 <!-- NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR -->
-    <nav class="navbar nav-custom navbar-expand-lg navbar-light custom-shadow">
+    <nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top">
         <a href="#"><img src="images/elits-logo.png" width="30px" class="navbar-brand img-fluid elits-logo"></a>
         <a class="navbar-brand text-lg" href="#"><span>Elite League of Information Technology Students</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +23,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><span>Home</span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Home</span></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#history-section">ELIST History</a></li>
+                <li><a class="dropdown-item" href="#awards-section">Awards</a></li>
+                <li><a class="dropdown-item" href="#news-section">Latest News</a></li>
+                <li><a class="dropdown-item" href="#events-section">Events</a></li>
+                <li><a class="dropdown-item" href="#">Join Us</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><span>Shop</span></a>
+                <a class="nav-link" href="shop.html"><span>Shop</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><span>About Dev</span></a>
@@ -40,9 +47,9 @@
       </nav>
 
 <!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION -->
-    <div class="hero-section container-fluid">
+    <div class="hero-section container-fluid" id="hero-section">
         <div class="container">
-            <img src="images/elts-president.png" class="img-fluid elits-president" width="300px">
+            <img src="images/elits-1st-year-rep.png" class="img-fluid elits-president" width="300px">
             <div class="hero-section-greeting">
                 <p>Elite League of Information Technology Students</p>
                 <h1 class="text-sm">The official website of ELITS, a school organization for <span>BSIT students at Cavite State University</span>.</h1>
@@ -65,11 +72,11 @@
                   </div>
             </div>
         </div>
-
     </div>
 
+
 <!-- HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION HISTORY SECTION -->
-    <div class="history-section container-fluid text-center">
+    <div class="history-section container-fluid text-center" id="history-section">
         <div class="container pt-5">
             <h1>ELITS History</h1><hr style="color: white; outline: 1px solid white;">
             <p class="history-statement">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente laborum voluptas ipsa voluptates, quaerat delectus veniam alias perspiciatis numquam. Facere nobis maxime debitis dolores quidem odit cupiditate commodi iure numquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam mollitia, earum culpa adipisci iusto sunt temporibus suscipit deserunt, doloremque dicta nesciunt! Odit corrupti laborum quia ipsa quo maxime quisquam.</p>
@@ -115,7 +122,7 @@
     </div>
 
 <!-- AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION AWARDS SECTION -->
-    <div class="awards-section container-fluid">
+    <div class="awards-section container-fluid" id="awards-section">
       <div class="container">
         <h1 class="pt-5 text-center">List of ELITS Awards</h1><hr style="color: white; outline: 1px solid black;">
           <div class="row mt-4">
@@ -253,7 +260,7 @@
 
     </div>
 
-    <div class="news-section container-fluid pb-5">
+    <div class="news-section container-fluid pb-5" id="news-section">
       <div class="container">
         <h1 class="pt-5 text-center">Latest News Update</h1><hr style="color: white; outline: 1.3px solid white;">
         <div class="row mt-4">
@@ -573,7 +580,7 @@
 
     </div>
 
-    <div class="events-section container-fluid pb-4">
+    <div class="events-section container-fluid pb-4" id="events-section">
       <div class="container">
         <h1 class="pt-5 text-center">Latest Events</h1><hr style="color: white; outline: 1.3px solid white;">
         <div class="row mt-4">
@@ -914,6 +921,7 @@
       </div>
 
     </div>
+
 
 
 

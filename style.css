@@ -13,15 +13,12 @@
     font-family: "Chakra Petch", sans-serif;
     scroll-behavior: smooth;
 }
-
-.navbar .nav-custom{
-    background-color: var(--tertiary) !important;
-}
 .custom-shadow{
     box-shadow: 0 3px 12px var(--primary-shadow); 
+    background: var(--tertiary);
 }
 .elits-logo{
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 .navbar-brand span{
     font-weight: 400;
@@ -33,6 +30,22 @@
 }
 .nav-item{
     margin: 0 20px 0 20px;   
+}
+.nav-item.dropdown .dropdown-toggle::after {
+    color: var(--primary);
+}
+.dropdown-item{
+    border-bottom: 1px dotted lightgrey;   
+}
+.dropdown:hover .dropdown-menu{
+    transition: 0.5s;
+    display: block;
+    box-shadow: 0 3px 20px rgba(234, 152, 0, 0.499);
+}
+.dropdown-menu a:hover{
+    color: var(--tertiary);
+    background-color: var(--primary);
+    transition: 0.5;
 }
 .nav-link span{
     font-weight: 600;
@@ -97,7 +110,7 @@
     margin: -280px 0 0 350px;
     width: 55%;
     border-radius: 5%;
-    padding-bottom: 75px;
+    margin-bottom: 75px;
 }
 .hero-section-card .card{
     background-color: rgb(241, 153, 29);
