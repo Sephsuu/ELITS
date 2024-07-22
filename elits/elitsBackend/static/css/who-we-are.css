@@ -1,0 +1,124 @@
+:root{
+    --primary: #F18700;
+    --secondary: #3C4142;
+    --tertiary: #fff;
+    --primary-shadow: rgba(211, 123, 0, 0.596);
+    --secondary-outline: #000;
+    --dark-primary: rgb(234, 152, 0);
+}
+*{
+    font-family: "Chakra Petch", sans-serif;
+    scroll-behavior: smooth;
+}
+.elits-members{
+    background: #000;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 100px;
+}
+.elits-members .header{
+    position: relative;
+    top: 0;
+    padding-top: 12rem;
+    z-index: 0;
+}
+.elits-members .header .sticky-bg{
+    position: sticky;
+    top: 2000px; /* Adjust the top position as needed */
+    z-index: -1; /* Ensure it stays on top of other elements */
+    max-width: 100%;
+
+}
+.elits-members .header h1{
+    font-size: 5rem;
+    color: var(--tertiary);
+    font-weight: 600;
+}
+.elits-members .member-images h1{
+    align-self: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--tertiary);
+}
+@media (max-width: 567px){
+    .elits-members .member-images h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 375px){
+    .elits-members .member-images h1{
+        font-size: 2.7rem;
+    }
+}
+.elits-members .container img{
+    border-radius: 5px;
+    width: 30rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.elits-members .container img:hover{
+    width: 30.1rem;
+    transition: 0.4s;
+    filter: brightness(50%);
+}
+.elits-members .member-images{
+    position: relative;
+    z-index: 1 !important;
+}
+
+.who-we-are-section{
+    height: auto;
+    padding-bottom: 100px;
+}
+.who-we-are-section .who-we-are-greeting{
+    padding-top: 80px;
+}
+.who-we-are-section .who-we-are-greeting h1{
+    font-size: 70px;
+    font-weight: 800;
+    color: var(--primary);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+}
+.who-we-are-section .who-we-are-greeting span{
+    color: var(--secondary);
+}
+@media (max-width: 768px){
+    .who-we-are-section .who-we-are-greeting h1{
+        font-size: 50px;
+    }
+}
+.who-we-are-section .who-we-are-greeting p{
+    font-size: 20px;
+    width: 60vw;
+    margin: 0 auto;
+    color: var(--secondary);
+}
+.who-we-are-section .who-we-are-greeting .btn-members{
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--primary);
+    color: var(--tertiary);
+    padding: 18px;
+    margin-top: 35px;
+}
+.who-we-are-section .who-we-are-greeting .btn-members:hover{
+    background: var(--secondary);
+}
+.who-we-are-section .who-we-are-greeting .btn-members:active{
+    background: var(--tertiary);
+    outline: 2px solid var(--secondary);
+    color: var(--secondary);
+    transition: 0s;
+}
+.elits-members .modal .officer-bio{
+    text-align: justify;
+}
+.elits-members .modal .modal-body h1{
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 2rem;
+}
+.elits-members .modal .modal-body img{
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+}

@@ -1,0 +1,199 @@
+{% load static %}
+
+<div class="container-fluid merchandise-section pb-5 overflow-hidden" id="merchandise-section">
+    <div class="container pt-5">
+      <h1 class="text-center">ELITS Merchandise</h1>
+      <hr style="color: white; outline: 1px solid black;">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="btn-group custom-indicators d-flex justify-content-center" role="group">
+          <a type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true">Lanyard</a>
+          <a type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">T-shirt</a>
+          <a type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">Others</a>
+        </div>
+        <div class="carousel-inner mt-4">
+          <div class="carousel-item active">
+            {% for lanyard in lanyards %}
+            <div class="row">
+              <div class="col-md-6">
+                <img src="{{ lanyard.merchImage.url }}" class="img-fluid banner" alt="Lanyard">
+              </div>
+              <div class="col-md-6 text-center mb-5">
+                <h1>ELITS <span>Lanyard</span><hr></h1>
+                <div class="lanyard-prices">
+                  <h1 class="price">₱ {{ lanyard.discountPrice }}</h1>
+                  <h1 class="price"><span>₱ {{ lanyard.originalPrice }}</span></h1>
+                </div>
+                <div class="row mt-5 lanyard mb-5">
+                    <a class="w-membership">Buy w/ Membership</a>
+                    <a>Buy w/o Membership</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <img src={% static "assets/images/elits-org-shirt.jpg" %} class="img-fluid banner" alt="T-shirt">
+              </div>
+              <div class="col-md-6 mt-2 t-shirts">
+                <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-xs-1 justify-content-center">
+                  {% for shirt in shirts %}
+                  <div class="col mb-4">
+                      <div class="card h-100 product-item">
+                          <img class="card-img-top" src="{{ shirt.merchImage.url }}" alt="..." />
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">{{ shirt.name }}</h5>
+                                   <h6><strong>₱</strong> {{ shirt.discountPrice }}</h6>
+                                   <span class="badge" style="background: #F18700;">ELITS Members</span>
+                                   <h6 class="mt-3"><strong>₱</strong> {{ shirt.originalPrice }}</h6>
+                                   <span class="badge bg-secondary">Non-member</span>
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto w-100" href="">Avail</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row other-merch">
+              <div class="col-md-6 text-center order-2 order-md-1 mb-5">
+                <h1>ELITS <span>Polo Shirt</span><hr></h1>
+                <div class="lanyard-prices">
+                  <h1 class="price">₱ 720</h1>
+                  <h1 class="price"><span>₱ 750</span></h1>
+                </div>
+                <div class="row mt-5 lanyard">
+                    <a class="w-membership">Buy w/ Membership</a>
+                    <a>Buy w/o Membership</a>
+                </div>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <img src="images/elits-org-polo.jpg" class="img-fluid banner" alt="Others">
+              </div>
+            </div>
+            <div class="mt-5 row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+
+              <div class="col mb-4">
+                  <div class="card h-100 product-item">
+                      <!-- Product image-->
+                      <img class="card-img-top" src="images/elits-org-shirt-1.jpg" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Black T-shirt 1</h5>
+                              <!-- Product price-->
+                              <strong>₱</strong> 299.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto w-100" href="#">Avail</a></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100 product-item">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/elits-org-shirt-2.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">White T-shirt 1</h5>
+                            <!-- Product price-->
+                            <strong>₱</strong> 299.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto w-100" href="#">Avail</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card h-100 product-item">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="images/elits-org-shirt-3.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Black T-shirt 2</h5>
+                          <!-- Product price-->
+                          <strong>₱</strong> 299.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto w-100" href="#">Avail</a></div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col mb-4">
+            <div class="card h-100 product-item">
+                <!-- Product image-->
+                <img class="card-img-top" src="images/elits-org-shirt-4.jpg" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">White T-shirt 2</h5>
+                        <!-- Product price-->
+                        <strong>₱</strong> 299.00
+                    </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto w-100" href="#">Avail</a></div>
+                </div>
+            </div>
+        </div>
+  
+  
+          </div>
+          </div>
+        </div>
+      </div><hr>
+      <div class="purchase-option">
+        <h1><span>Purchase</span> Option</h1>
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <div class="card">
+              <i class="fa-brands fa-paypal"></i>
+              <h4>Pay on Paypal</h4>
+              <a class="mt-4">Choose this Payment &#10509;</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <i class="fa-solid fa-peso-sign"></i>
+              <h4>Pay on Gcash</h4>
+              <a class="mt-4">Choose this Payment &#10509;</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h4>On Hand Payment</h4>
+              <a class="mt-4">Choose this Payment &#10509;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>

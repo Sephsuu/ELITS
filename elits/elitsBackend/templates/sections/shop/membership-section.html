@@ -1,0 +1,94 @@
+{% load static %}
+<div class="container-fluid membership-section overflow-hidden" id="membership-section">
+    <div class="container text-center membership-greeting">
+      <h1><span>ELITS</span> Membership</h1>
+      <p class="mt-2 text-center">Avail Exclusive Membership Pass: Unlock Benefits Today! and Access Exclusive Rewards and Privileges!. Elevate Your Status, Enjoy Premium Benefits!</p>
+      <a href="#avail-membership" class="btn btn-avail rounded-pill">Avail Membership</a>
+    </div>
+
+    <div class="modal" id="avail-membership-btn" tabindex="-1">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <nav>
+                      <div class="row">
+                          <a class="col package-1" data-package="1">Package 1</a>
+                          <a class="col package-2" data-package="2">Package 2</a>
+                          <div class="animation start-home"></div>
+                      </div>
+                  </nav>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="package-type package-1-content active" id="package-1-content">
+                    <div class="package-header">
+                      <h2 class="text-center pt-3">Membership Package 1<br>Content</h2>
+                    </div>
+                    <div class="package-content text-center"><hr>
+                      <h2>₱ 70</h2>
+                      <p><span>per semester</span></p><hr>
+                      <a class="btn avail-button">Avail Now</a><hr>
+                      <p><b>Birthday Corner:</b> A Beautiful and Memorable Birthday Celebration!</p><hr>
+                      <p><b>Access to ELITS' Activities:</b> Team Building, ELITS Recognition, Invitation to Exclusive Worshops and Webinars</p><hr>
+                      <p><b>Access to FB Group:</b> For community engagement and/or for learning materials</p><hr>
+                      <p><b>Discounts:</b> Exclusive discount on ELITS Lanyard</p>
+                    </div>
+                  </div>
+                  <div class="package-type package-2-content" id="package-2-content">
+                    <div class="package-header">
+                      <h2 class="text-center pt-3">Membership Package 2<br> Content</h2>
+                    </div>
+                    <div class="package-content text-center"><hr>
+                      <h2>₱ 80</h2>
+                      <p><span>per semester</span></p><hr>
+                      <a class="btn avail-button">Avail Now</a><hr>
+                      <p><b>Birthday Corner:</b> A Beautiful and Memorable Birthday Celebration!</p><hr>
+                      <p><b>Access to ELITS' Activities:</b> Team Building, ELITS Recognition, Invitation to Exclusive Worshops and Webinars</p><hr>
+                      <p><b>Access to FB Group:</b> For community engagement and/or for learning materials</p><hr>
+                      <p><b>Discounts:</b> Exclusive discount on ELITS Polo Shirt</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-fluid membership-package overflow-hidden" id="avail-membership">
+    <div class="package package-1 reveal-left">
+      <div class="package-text">
+        <h1>Package 1</h1>
+        <li>Birthday Corner</li>
+        <li>Access to ELITS' Activities</li>
+        <li>Access to FB Group</li>
+        <li>Discounts</li>
+        <a data-bs-toggle="modal" data-bs-target="#avail-membership-btn">Read More &rarr;</a>
+      </div>
+      <div class="package-image">
+        <div class="div">
+          <a data-bs-toggle="modal" data-bs-target="#avail-membership-btn">
+            <img src={% static "assets/images/membership-package-1.jpg" %} alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="package package-2 reveal-right">
+      <div class="package-image">
+        <div>
+          <a >
+            <img src={% static "assets/images/membership-package-2.jpg" %} alt="">
+          </a>
+        </div>
+      </div>
+      <div class="package-text">
+        <h1>Package 2</h1>
+        <li>Birthday Corner</li>
+        <li>Access to ELITS' Activities</li>
+        <li>Access to FB Group</li>
+        <li>Discounts</li>
+        <a href="#package-2-content" data-bs-toggle="modal" data-bs-target="#avail-membership-btn">Read More &rarr;</a>
+      </div>
+    </div>
+
+</div>

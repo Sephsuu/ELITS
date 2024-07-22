@@ -1,0 +1,42 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top" id="nav">
+    <a href="#"><img src={% static "assets/images/elits-logo.png" %} width="30px" class="navbar-brand img-fluid elits-logo"></a>
+    <a class="navbar-brand text-lg navbar-brand-lg" href="#"><span>Elite League of Information Technology Students</span></a>
+    <a class="navbar-brand text-lg navbar-brand-sm" href="#"><span>ELITS</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Home</span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url "homepage" %}">Homepage</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#history-section">ELITS History</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#awards-section">Awards</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#news-section">Latest News</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#events-section">Events</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#join">Join Us</a></li>
+            <li><a class="dropdown-item" href="{% url "homepage" %}#footer">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Shop</span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url "shop" %}">Membership</a></li>
+            <li><a class="dropdown-item" href="{% url "shop" %}#merchandise-section">Merchandise</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Who we are</span></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url "who_we_are" %}">ELITS Overview</a></li>
+            <li><a class="dropdown-item" href="{% url "who_we_are" %}#elits-members">ELITS Officers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="dev.html"><span>Dev</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>

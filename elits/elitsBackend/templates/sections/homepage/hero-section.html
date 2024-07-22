@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="hero-section container-fluid overflow-hidden">
+    <div class="container">
+      <img src={% static "assets/images/elits-1st-year-rep2.png" %} class="img-fluid elits-member" id="elitsMemberImg">
+      <div class="hero-section-greeting">
+        <p class="section-greeting-lg">Elite League of Information Technology Students</p>
+        <p class="section-greeting-sm">ELITS CvSU - Main Campus</p>
+        <h1 class="text-sm">The official website of ELITS, a school organization for <span>BSIT students at Cavite State University</span>.</h1>
+        <div style="position: relative;">
+          <input type="text" class="form-control mt-4" id="searchInput" placeholder="Search for a content">
+          <div id="dropdown" class="dropdown hidden"></div>
+      </div>
+      </div>
+      <div class="card">
+          <div class="row m-5 card-content">
+            <div class="col-8">
+                <p class="card-title">Become an ELITS member by <b>creating an account</b>.</p>
+                <a href="{% url 'login' %}" class="btn btn-light mt-2 mt-sm-0 create-account-btn"><span>ELITS Account</span></a>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+              <a href="{% url 'login' %}">
+                <img src={% static "assets/images/elits-dp.jpg" %} class="img-fluid elits-dp" width="80px">
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>

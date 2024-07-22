@@ -1,0 +1,94 @@
+{% load static %}
+
+<div class="events-section container-fluid pb-5 overflow-hidden" id="events-section">
+    <div class="container">
+      <h1 class="pt-5 text-center">Latest Events</h1><hr style="color: white; outline: 1.3px solid white;">
+      {% for event in recent_events %}
+      <div class="row mt-4">
+        <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+          <img src="{{ event.eventImage.url }}" class="img-fluid events-image m-2">
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <div class="events-title">
+            <h4 class="mt-4">{{ event.title }}</h4>
+          </div>
+          <p class="events-content">{{ event.body }}</p>
+          <a class="events-read-more" data-bs-toggle="modal" data-bs-target="#event{{ event.id }}">Read More</a>
+          <p class="card-text mt-2"><small class="text-muted">Event Date: {{ event.date }}</small></p>
+          <span class="badge bg-custom">{{ event.category }}</span>
+        </div>
+      </div>
+
+      <div class="modal" id="event{{ event.id }}" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ event.title }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                  <span class="badge bg-secondary">{{ event.category }}</span>
+                  <p class="card-text events-info mt-3">{{ event.body }}</p>
+                  <p class="card-text mt-4"><small class="text-muted">Date of Event: {{ event.date }}</small></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+      <div class="more-events d-flex justify-content-center mt-4">
+        <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#more-events">More Events</a>
+      </div>
+    </div>
+
+    <div class="modal" id="more-events" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">More Events</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-4">
+              <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 more-events-nav">
+                <h4 class="navbar-brand text-center">Dates</h4>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link" href="#events-9-23">9/23</a>
+                  <a class="nav-link" href="#events-10-23">10/23</a>
+                  <a class="nav-link" href="#events-11-23">11/23</a>
+                  <a class="nav-link" href="#events-12-23">12/23</a>
+                  <a class="nav-link" href="#events-1-24">1/24</a>
+                  <a class="nav-link" href="#events-2-24">2/24</a>
+                  <a class="nav-link" href="#events-3-24">3/24</a>
+                  <a class="nav-link" href="#events-4-24">4/24</a>
+                  <a class="nav-link" href="#events-5-24">5/24</a>
+                </nav>
+              </nav>
+              </div>
+              
+              <div class="col-8">
+              <div data-bs-spy="scroll" class="more-events-scrollspy" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+                <center>
+                  <div>
+                    {% for event in events %}
+                    <div>
+                      <img src="{{ event.eventImage.url }}" class="img-fluid mt-2" width="250px">
+                      <h4 class="mt-2">{{ event.title }}</h4>
+                      <p class="mt-3">{{ event.body }}</p>
+                      <p class="card-text"><small class="text-muted">{{ event.date }}</small></p>
+                      <p><span class="badge bg-custom">{{ event.category }}</span></p>
+                    </div><hr>
+                    {% endfor %}
+                  </div>
+                </center>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

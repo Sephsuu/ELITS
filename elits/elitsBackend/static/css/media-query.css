@@ -1,0 +1,401 @@
+:root{
+    --primary: #F18700;
+    --secondary: #3C4142;
+    --tertiary: #fff;
+    --primary-shadow: rgba(211, 123, 0, 0.596);
+    --secondary-outline: #000;
+    --dark-primary: rgb(234, 152, 0);
+}
+
+@media (max-width: 1400px){
+    .elits-member{
+        margin: 10px 0 0 70px;
+        width: 310px;
+        transform: rotateY(180deg);
+    }
+    .hero-section-greeting{
+        width: 700px;
+        position: absolute;
+        margin: -480px 0 0 330px;
+    }
+    .hero-section .card{
+        margin-left: 330px;
+    }
+}
+@media (max-width: 1200px){
+    .hero-section .container{
+        margin-left: 10px;
+    }
+    .hero-section .card{
+        width: 65%;
+    }
+    .events-section .col-lg-8 .bg-custom{
+        float: right;
+        margin-top: -50px;
+    }
+}
+@media (max-width: 1185px){
+    .hero-section-greeting{
+        width: 700px;
+        position: absolute;
+        margin: -480px 0 0 310px;
+    }
+    .hero-section .card{
+        margin-left: 310px;
+        width: 70%;
+    }
+}
+@media (max-width: 1160px){
+    .hero-section .container{
+        margin-left: -20px;
+    }
+}
+@media (max-width: 1100px){
+    .hero-section .container{
+        margin-left: -40px;
+    }
+}
+@media (max-width: 1050px){
+    .elits-member{
+        margin-bottom: 68px;
+    }
+    .hero-section-greeting{
+        width: 650px;
+        margin-top: -530px;
+    }
+    .hero-section .card{
+        margin-top: -300px;
+        width: 60%;
+    }
+    .hero-section .card .card-content{
+        margin: 30px !important;
+    }
+    .hero-section .card .card-content p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 992px){
+    .navbar .navbar-nav{
+       margin-left: initial;
+    }
+    .navbar .nav-link{
+        text-align: center;
+    }
+    .navbar .dropdown-item{
+        text-align: center;
+    }
+    .hero-section .container{
+        margin-top: 80px !important;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .hero-section .hero-section-greeting{
+        width: 93vw;
+        margin: -350px 0 0 9vw;
+        text-align: initial;
+    }
+    .hero-section .hero-section-greeting p{
+        width: 70%;
+    }
+    .hero-section .hero-section-greeting h1{
+        width: 70%;
+    }
+    .hero-section .elits-member{
+        width: 230px;
+        margin: 20px 0 0 71vw;
+        transform: initial;
+    }
+    .hero-section-greeting input{
+        margin-top: 60px !important;
+        width: 88vw !important;
+        justify-content: center;
+    }
+    .hero-section .card{
+        margin: -60px 0 80px 9vw !important;
+        width: 88vw !important;
+    }
+    .news-section .news-head-info{
+        margin-top: 25px;
+    }
+    .news-section .other-news .news-item-core{
+        border-right: none;
+        border-left: none;
+    }
+    .news-section .banner{
+        width: 500px;
+    }
+    .merchandise-ection .container{
+        width: 80% !important;
+    }
+    .merchandise-section .carousel .carousel-item h1{
+        font-size: 50px;
+        font-weight: 700;
+        margin: 80px 0 40px 0;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard-prices h1.price{
+        font-size: 40px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard a{
+        margin: 2px;
+        font-size: 15px;
+    }
+    .merchandise-section .purchase-option .row{
+        margin-top: 10px;
+    }
+    .merchandise-section .purchase-option .card{
+        margin-top: 100px;
+    }
+    .footer .footer-head{
+        border-right: none;
+    }
+}
+@media (max-width: 902px){
+    .merchandise-section .carousel .carousel-item h1{
+        margin: 50px 0 40px 0;
+    }
+}
+@media (max-width: 802px){
+    .merchandise-section .carousel .carousel-item h1{
+        font-size: 40px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard-prices h1.price{
+        font-size: 30px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px){
+    .hero-section .elits-member{
+        margin-left: 65vw;
+    }
+    .awards-section .award-image{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 15px;
+    }
+    .news-section .other-news img{
+        text-align: center;
+        align-items: center;
+    }
+    .news-section .other-news .other-news-img{
+        width: initial;
+    }
+    .membership-section .membership-greeting h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px){
+    .merchandise-section .carousel .carousel-item h1{
+        font-size: 50px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard-prices h1.price{
+        font-size: 40px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard a{
+        font-size: 15px;
+    }
+    .merchandise-section .carousel .carousel-item .t-shirts{
+        margin-top: 50px !important;
+    }
+}
+@media (max-width: 750px){
+    .membership-package .package{
+        display: block;
+        width: 30em;
+    }
+    .membership-package .package-image,
+    .membership-package .package-text{
+        width: 100%;
+        text-align: justify;
+    }
+    .membership-package img{
+        width: 160%;
+    }
+    .membership-package .package .package-image::before{
+        width: 120%;
+        height: 40%;
+        top: -4em;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+        border-bottom: 3px solid;
+        border-image: linear-gradient(to top, #ffdd00, #ffdb4d, #ffec73, #fff092, #ffec73, #ffdb4d, #ffdd00);
+        border-image-slice: 1;
+        z-index: 1;
+    }
+    .membership-package .package-2 .package-image::before{
+        transform: translateX(-50%) rotate(-10deg);
+        top: initial;
+        bottom: -4em;
+        border-top: 3px solid;
+        border-image: linear-gradient(to top, #ffdd00, #ffdb4d, #ffec73, #fff092, #ffec73, #ffdb4d, #ffdd00);
+        border-image-slice: 1;
+    }
+    .membership-package .package-image img{
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .membership-package .package-2 .package-image img:hover {
+        margin-right: initial; 
+    }
+    .membership-package .package-image img:hover {
+        margin-left: initial; 
+    }
+}
+@media (max-width: 648px){
+    .hero-section-greeting input{
+        margin-top: 30px !important;
+    }
+    .hero-section .card{
+        margin-top: -10px !important;
+    }
+}
+@media (max-width: 605px){
+    .hero-section .elits-member{
+        margin-left: 61vw;
+    }
+    .hero-section .card{
+        margin-top: -10px !important;
+    }
+}
+@media (max-width: 550px){
+    .hero-section .container{
+        margin-top: 60px !important;
+    }
+    .navbar-brand-lg{
+        display: none;
+    }
+    .navbar-brand-sm{
+        display: block;
+    }
+    .hero-section .hero-section-greeting .section-greeting-lg{
+        display: none;
+    }
+    .hero-section .hero-section-greeting .section-greeting-sm{
+        display: block;
+    }
+    .hero-section .hero-section-greeting{
+        width: 80%;
+    }
+    .hero-section .elits-member{
+        margin-left: 55vw;
+    }
+}
+@media (max-width: 540px){
+    .merchandise-section .carousel .custom-indicators a{ 
+        margin: 0 20px;
+    }
+}
+@media (max-width: 530px){
+    .membership-package .package{
+        display: block;
+        width: 20em;
+    }
+    .membership-package .package-1 .package-image::before{
+        top: -5em;
+    }
+    .membership-package .package-2 .package-image::before{
+        bottom: -5em;
+    }
+}
+@media (max-width: 514px){
+    .hero-section .card .card-title{
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 474px){
+    .hero-section .hero-section-greeting h1{
+        font-size: 26px;
+    }
+    .hero-section .hero-section-greeting p{
+        font-size: 14px;
+    }
+    .hero-section .elits-member{
+        margin-left: 53vw;
+    }
+}
+@media (max-width: 435px){
+    .hero-section .hero-section-greeting h1{
+        font-size: 26px;
+    }
+    .hero-section .hero-section-greeting p{
+        font-size: 14px;
+    }
+    .hero-section .elits-member{
+        margin-left: 52vw;
+    }
+    .hero-section .card .card-title{
+        font-size: 14px !important;
+    }
+    .hero-section .card .elits-dp{
+        width: 70px;
+        height: 70px;
+        align-self: center;
+    }
+}
+@media (max-width: 425px){
+    .history-section h1,
+    .awards-section h1,
+    .news-section h1,
+    .events-section .container h1,
+    .merchandise-section .container h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 413px){
+    .merchandise-section .carousel .carousel-item h1{
+        font-size: 40px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard-prices h1.price{
+        font-size: 30px;
+        margin: 0 35px 0 35px;
+    }
+    .merchandise-section .carousel .carousel-item .others h1.price{
+        font-size: 30px;
+        margin: 0 25px 0 25px;
+    }
+    .merchandise-section .carousel .carousel-item .lanyard a{
+        font-size: 10px;
+    }
+}
+@media (max-width: 410px){
+    .hero-section .hero-section-greeting h1{
+        font-size: 24px;
+    }
+    .hero-section .hero-section-greeting p{
+        font-size: 12px;
+    }
+    .hero-section .elits-member{
+        margin-left: 49vw;
+    }
+}
+@media (max-width: 390px){
+    .hero-section .hero-section-greeting{
+        width: 70%;
+    }
+    .hero-section .hero-section-greeting{
+        margin-top: -370px !important;
+    }
+    .hero-section .elits-member{
+        margin-left: 48vw;
+    }
+    .hero-section .card .card-content{
+        margin: 15px !important;
+    }
+    .hero-section .card .create-account-btn{
+        font-size: 12px;
+    }
+}
+@media (max-width: 376px){
+    .hero-section .elits-member{
+        margin-left: 46vw;
+    }
+}
+@media (max-width: 360px){
+    .hero-section .elits-member{
+        margin-left: 44vw;
+    }
+}
