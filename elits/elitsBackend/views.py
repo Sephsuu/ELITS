@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from .models import Event, Merchandise, Officer, Students, VerificationToken
 from django.contrib.auth import logout as auth_logout, login as auth_login, authenticate
 from django.contrib.auth.models import User
@@ -97,7 +97,7 @@ def verify_email(request, token):
 
     messages.success(request, "Email has been verified")
     return redirect('login')
-    
+
 def login(request):
     if request.method == 'POST':
         form = StudentLogin(data=request.POST)
@@ -122,9 +122,9 @@ def logout(request):
     auth_logout(request)
     return redirect('homepage')
 
-
 def student_dashboard(request):
-    return render(request, 'dashboard.html', {})
+    student = request.user.students
+    return render(request, 'dashboard.html', {'student': student})
 
 
 
