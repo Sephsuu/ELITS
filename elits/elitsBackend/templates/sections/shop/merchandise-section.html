@@ -15,13 +15,13 @@
             {% for lanyard in lanyards %}
             <div class="row">
               <div class="col-md-6">
-                <img src="{{ lanyard.merchImage.url }}" class="img-fluid banner" alt="Lanyard">
+                <img src="{% static 'assets/images/elits-lanyard.jpg' %}" class="img-fluid banner" alt="Lanyard">
               </div>
               <div class="col-md-6 text-center mb-5">
                 <h1>ELITS <span>Lanyard</span><hr></h1>
                 <div class="lanyard-prices">
-                  <h1 class="price">₱ {{ lanyard.discountPrice }}</h1>
-                  <h1 class="price"><span>₱ {{ lanyard.originalPrice }}</span></h1>
+                  <h1 class="price">₱ 120.00</h1>
+                  <h1 class="price"><span>₱ 150.00</span></h1>
                 </div>
                 <div class="row mt-5 lanyard mb-5">
                     <a class="w-membership">Buy w/ Membership</a>
@@ -41,7 +41,7 @@
                   {% for shirt in shirts %}
                   <div class="col mb-4">
                       <div class="card h-100 product-item">
-                          <img class="card-img-top" src="{{ shirt.merchImage.url }}" alt="..." />
+                          <img class="card-img-top" src="{% static 'assets/images/elits-org-shirt-1.jpg' %}" alt="..." />
                           <div class="card-body p-4">
                               <div class="text-center">
                                   <!-- Product name-->
@@ -77,7 +77,7 @@
                 </div>
               </div>
               <div class="col-md-6 order-1 order-md-2">
-                <img src="images/elits-org-polo.jpg" class="img-fluid banner" alt="Others">
+                <img src="{% static 'assets/images/elits-org-polo.jpg' %}" class="img-fluid banner w-75" alt="Others">
               </div>
             </div>
             <div class="mt-5 row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -86,7 +86,7 @@
               <div class="col mb-4">
                   <div class="card h-100 product-item">
                       <!-- Product image-->
-                      <img class="card-img-top" src="images/elits-org-shirt-1.jpg" alt="..." />
+                      <img class="card-img-top" src="{% static 'assets/images/elits-org-shirt-1.jpg' %}" alt="..." />
                       <!-- Product details-->
                       <div class="card-body p-4">
                           <div class="text-center">
@@ -106,7 +106,7 @@
               <div class="col mb-4">
                 <div class="card h-100 product-item">
                     <!-- Product image-->
-                    <img class="card-img-top" src="images/elits-org-shirt-2.jpg" alt="..." />
+                    <img class="card-img-top" src="{% static 'assets/images/elits-org-shirt-2.jpg' %}" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-center">
@@ -126,7 +126,7 @@
             <div class="col mb-4">
               <div class="card h-100 product-item">
                   <!-- Product image-->
-                  <img class="card-img-top" src="images/elits-org-shirt-3.jpg" alt="..." />
+                  <img class="card-img-top" src="{% static 'assets/images/elits-org-shirt-3.jpg' %}" alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                       <div class="text-center">
@@ -146,7 +146,7 @@
           <div class="col mb-4">
             <div class="card h-100 product-item">
                 <!-- Product image-->
-                <img class="card-img-top" src="images/elits-org-shirt-4.jpg" alt="..." />
+                <img class="card-img-top" src="{% static 'assets/images/elits-org-shirt-4.jpg' %}" alt="..." />
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-center">

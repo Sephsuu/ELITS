@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'elits',
         'USER': 'postgres',
-        'PASSWORD': '424230150119',
+        'PASSWORD': 'Pw:424230150119',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -128,7 +128,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "elitsBackend/static",
+]
 
 MEDIA_URL = 'elitsBackend/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'elitsBackend/media/')
